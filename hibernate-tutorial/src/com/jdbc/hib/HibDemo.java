@@ -12,7 +12,7 @@ public class HibDemo {
 		SessionFactory sf = new Configuration().configure()
 							.addAnnotatedClass(Student.class).buildSessionFactory();
 		
-		Session session = sf.getCurrentSession();
+		Session session = sf.getCurrentSession();	
 		
 		Student stud = new Student("Killer", "Whale", "abc@com");
 		
